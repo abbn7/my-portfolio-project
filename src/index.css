@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 12% 9%;
+    --foreground: 36 33% 93%;
+    --card: 30 8% 15%;
+    --card-foreground: 36 33% 93%;
+    --popover: 30 8% 15%;
+    --popover-foreground: 36 33% 93%;
+    --primary: 36 33% 64%;
+    --primary-foreground: 30 8% 15%;
+    --secondary: 30 8% 15%;
+    --secondary-foreground: 36 33% 93%;
+    --muted: 30 8% 15%;
+    --muted-foreground: 30 12% 63%;
+    --accent: 36 33% 64%;
+    --accent-foreground: 30 8% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 6% 22%;
+    --input: 30 6% 22%;
+    --ring: 36 33% 64%;
+    --radius: 0.625rem;
+    --sidebar-background: 30 12% 9%;
+    --sidebar-foreground: 36 33% 93%;
+    --sidebar-primary: 36 33% 64%;
+    --sidebar-primary-foreground: 30 8% 15%;
+    --sidebar-accent: 30 8% 15%;
+    --sidebar-accent-foreground: 36 33% 93%;
+    --sidebar-border: 30 6% 22%;
+    --sidebar-ring: 36 33% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-dark text-ivory font-urbanist antialiased;
+    direction: rtl;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #C8A97E 0%, #8B7347 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
